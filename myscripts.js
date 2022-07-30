@@ -8,11 +8,11 @@ let playerSelection = window.prompt ("Type your Selection: rock, paper or scisso
 console.log(getComputerChoice);
 
 
-
+function 
 if (playerSelection == "rocks" && computerSelection == "rocks") {
-console.log("Tie!");
+return "Tie!";
 }
 
 if (playerSelection == "rocks" && computerSelection == "scissors") {
-    console.log("You Win!");
+    return "You Win!";
 }
