@@ -24,3 +24,11 @@ function playRound (playerSelection, computerSelection) {
 console.log("You chose " + playerSelection);
 console.log("Computer chose " + computerSelection);
 console.log(playRound(playerSelection.toLowerCase(), computerSelection));
+
+for (let i = 0; i < 4; i++) {
+  playerSelection = prompt("Let's Play 5 Rounds...\n\nMan Vs. Computer!\n\nType ROCK, PAPER or SCISSORS");
+  console.log("You chose " + playerSelection);
+  console.log("Computer chose " + computerSelection);
+  console.log(playRound(playerSelection.toLowerCase(), computerSelection));
+
+}
