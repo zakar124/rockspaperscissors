@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
+    <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Rocks, Paper, Scissors Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="myscripts.js"></script>
-    <h1> Rocks Paper Scissors Game</h1>
+</head>
+
+<body>
+ 
+<div class = "topContainer">
+    <h1> Rocks, Paper, Scissors...</h1>
+   <h2>Let's play 5 rounds of your favorite schoolyard throwback </h2>
+    <img src="img/schoolyard.jpeg" alt="A Playground Slide" class= "image" />
+    </div>
+
+    <div class ="gameContainer">
+<div>Click Your Playground Weapon of Choice </div>
+
+<div class="popupRocks" onclick="rockspopUp()"> <span class="popuptext" id="Rocks">You chose ROCKS!</span>
+    <img src="img/rocks.jpeg" alt="a hand gesturing a rock" class= "image2" /> </div> 
+
+<div class="popupPaper" onclick="paperpopUp()"> <span class="popuptext" id="Paper">You chose PAPER!</span>
+<img src="img/paper.jpeg" alt="a hand gesturing a paper" class= "image2" /> </div>
+
+<div class="popupScissors" onclick="scissorspopUp()"> <span class="popuptext" id="Scissors">You chose SCISSORS!</span>
+<img src="img/scissors.jpeg" alt="a hand gesturing scissors" class= "image2" /> </div> </div>
+    
+
 </body>
 </html>

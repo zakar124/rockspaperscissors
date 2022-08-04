@@ -1,9 +1,82 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+
+
+
 h1 {
-    color: green;
-    border-style: solid;
+    color: rgb(255, 106, 0);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+h2 {
+    text-align: center; 
+    margin-top: 80px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 20px;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(132, 245, 213); opacity:0.9;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    background-color: rgb(240, 131, 14);
+    color: yellow;
+    margin: 20px;
+    border-style: ridge;
+    border-color: rgb(132, 245, 213);
+    border-width: 3px;
+    padding: 5px;
     text-align: center;
 
-
-
-
 }
+
+.image {
+    max-width:100%;
+    max-height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 10px;
+    border-radius: 25px;
+}
+
+    .image2 {
+        max-width:100%;
+        max-height: 100px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 10px;
+        border-radius: 25px;
+}
+
+
+.show {
+    display: block!important;
+    animation: popup .2s 1;
+  }
+  
+  @keyframes popup {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  
+  .popuptext {
+    display: none;
+    color: rgb(0, 217, 255);
+  }
+
+  .popupRocks .popupScissors .popupPaper {
+    display: flex;
+    flex-direction: row;
+ 
+  }
