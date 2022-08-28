@@ -70,10 +70,7 @@ h2 {
   }
   
   
-  .popuptext {
-    display: none;
-    color: rgb(0, 217, 255);
-  }
+ 
 
   .popupRocks .popupScissors .popupPaper {
     display: flex;

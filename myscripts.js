@@ -12,6 +12,7 @@ function rockspopUp() {
   let popupPaper = document.getElementById("Paper");
   popupPaper.classList.toggle("show");
   }
+  
   function scissorspopUp () {
   let popupScissors = document.getElementById("Scissors");
   popupScissors.classList.toggle("show");
