@@ -28,6 +28,10 @@ choices.forEach((choice) => {
     const playerInput = this.value;
     let computerInput = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     round.textContent++
+    let changeBackground = document.getElementById("scores");
+     changeBackground.style.display = "block";
+     let changeBackground1 = document.getElementById("playerChoices");
+     changeBackground1.style.display = "block";
 
   if ((playerInput === "Rock" && computerInput === "Paper" ) 
   || (playerInput === "Paper" && computerInput === "Scissors" )) {
@@ -80,6 +84,10 @@ choices.forEach((choice) => {
   });
 });
 document.querySelector('.button').addEventListener('click', function () {
+  let changeBackground = document.getElementById("scores");
+  changeBackground.style.display = "none";
+  let changeBackground1 = document.getElementById("playerChoices");
+  changeBackground1.style.display = "none";
   round.textContent = 0;
   yourScore.textContent = 0;
   computerScore.textContent =0;
@@ -90,3 +98,4 @@ document.querySelector('.button').addEventListener('click', function () {
   
 });
 
+style.display = 'block';

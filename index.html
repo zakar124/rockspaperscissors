@@ -15,7 +15,7 @@
 <body>
  
 <section class = "topContainer">
-    <button class="btn button">Click for Another 5 Rounds!</button>
+    <button class="btn button">Click to Clear Game!</button>
     <h1> Rocks, Paper, Scissors...</h1>
     <img src="img/schoolyard.jpeg" alt="A Playground Slide" class= "image" />
   
@@ -23,21 +23,21 @@
 
 
 
-<div class = "title"> Click Your Playground Weapon </div>
+<div class = "title"> Let's Go! Pick your Playground Weapon </div>
 <section class ="gameContainer"> 
 <input class="choices" type="image" src="img/rocks.jpeg" value="Rock" />
 <input class="choices" type="image" src="img/paper.jpeg" value="Paper" />
 <input class="choices" type="image" src="img/scissors.jpeg" value="Scissors" />
 </section>
 
- <section class ="playerChoices">
+ <section id ="playerChoices">
 Schoolyard Bully: <span class = "computerChose"></span>
 VS You: <span class = "youChose"> </span>
 
      <div class = "winner"> </div>
  </section>
  
- <div class = "scores">
+ <div id = "scores">
     Round: <span class = "round"> </span> ➡️
 Bully: <span class = "computerScore"> </span>
  You: <span class = "yourScore"></span>

@@ -83,7 +83,7 @@ h2 {
 
   
   
- .playerChoices {
+ #playerChoices {
  border: 10px solid rgb(48, 228, 213);
  text-align: center;
  padding: auto;
@@ -96,15 +96,15 @@ h2 {
  }
   
 
-  /* .hidden {
+  .hidden {
     display: none;
-  } */
+  }
 
  .computerChose, .youChose  {
      color:rgb(255, 106, 0);
  }
 
- .scores {
+ #scores {
      text-align: center;
      border: 5px dashed rgb(48, 228, 108);
  }
