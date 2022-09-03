@@ -10,29 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="myscripts.js"></script>
 </head>
 
 <body>
  
-<div class = "topContainer">
+<section class = "topContainer">
+    <button class="btn button">Click for Another 5 Rounds!</button>
     <h1> Rocks, Paper, Scissors...</h1>
-   <h2>Let's play 5 rounds of your favorite schoolyard throwback </h2>
     <img src="img/schoolyard.jpeg" alt="A Playground Slide" class= "image" />
-    </div>
+  
+</section>
 
-    <div class ="gameContainer">
-<div>Click Your Playground Weapon of Choice </div>
 
-<div class="popupRocks">
-    <img src="img/rocks.jpeg" alt="a hand gesturing a rock" class= "image2" /> </div> 
 
-<div class="popupPaper">
-<img src="img/paper.jpeg" alt="a hand gesturing a paper" class= "image2" /> </div>
+<div class = "title"> Click Your Playground Weapon </div>
+<section class ="gameContainer"> 
+<input class="choices" type="image" src="img/rocks.jpeg" value="Rock" />
+<input class="choices" type="image" src="img/paper.jpeg" value="Paper" />
+<input class="choices" type="image" src="img/scissors.jpeg" value="Scissors" />
+</section>
 
-<div class="popupScissors">
-<img src="img/scissors.jpeg" alt="a hand gesturing scissors" class= "image2" /> </div> </div>
-    
+ <section class ="playerChoices">
+Schoolyard Bully: <span class = "computerChose"></span>
+VS You: <span class = "youChose"> </span>
 
+     <div class = "winner"> </div>
+ </section>
+ 
+ <div class = "scores">
+    Round: <span class = "round"> </span> ➡️
+Bully: <span class = "computerScore"> </span>
+ You: <span class = "yourScore"></span>
+</div>
+</div> 
+<script src="myscripts.js"></script>
 </body>
 </html>

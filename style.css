@@ -25,19 +25,31 @@ h2 {
     background-color: rgb(132, 245, 213); opacity:0.9;
 }
 
+.button {
+    background-color: #3cffa4; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .btn:hover {
+    background-color: rgb(243, 169, 250);
+    border: 5px dotted rgb(62, 228, 219);
+  }
+
 .gameContainer {
     display: flex;
-    flex-direction: column;
-    flex-grow: 4;
-    background-color: rgb(240, 131, 14);
-    color: yellow;
-    margin: 20px;
-    border-style: ridge;
-    border-color: rgb(132, 245, 213);
-    border-width: 3px;
-    padding: 5px;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
 
+}
+
+.title {
+    text-align: center;
 }
 
 .image {
@@ -49,31 +61,50 @@ h2 {
     border-radius: 25px;
 }
 
-    .image2 {
-        max-width:100%;
-        max-height: 100px;
+  .choices {
+        max-width:auto;
+        max-height: 150px;
         margin-top: auto;
-        margin-bottom: auto;
-        padding-right: 10px;
-        border-radius: 25px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-right: 10x;
+        border-radius: 55px;
+        border: 5px dotted rgb(62, 228, 219);
+        
+}
+.choices:hover {
+        border: 12px dotted rgb(62, 228, 219);
+    }
+
+
+.imageBorder {
+    border: 20px solid rgb(48, 228, 213);
 }
 
-
-.show {
-    display: block!important;
-    animation: popup .2s 1;
-  }
-  
-  @keyframes popup {
-    from { transform: scale(0); }
-    to { transform: scale(1); }
-  }
   
   
+ .playerChoices {
+ border: 10px solid rgb(48, 228, 213);
+ text-align: center;
+ padding: auto;
+ }
  
+ .winner {
+    border: 15px solid rgb(48, 228, 108);
+    text-align: center;
+    font-size: 50px;
+ }
+  
 
-  .popupRocks .popupScissors .popupPaper {
-    display: flex;
-    flex-direction: row;
- 
-  }
+  /* .hidden {
+    display: none;
+  } */
+
+ .computerChose, .youChose  {
+     color:rgb(255, 106, 0);
+ }
+
+ .scores {
+     text-align: center;
+     border: 5px dashed rgb(48, 228, 108);
+ }
