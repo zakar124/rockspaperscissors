@@ -22,6 +22,7 @@ h2 {
 .topContainer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     background-color: rgb(132, 245, 213); opacity:0.9;
 }
 
