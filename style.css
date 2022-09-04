@@ -11,7 +11,9 @@ h1 {
     font-size: 50px;
     font-family: 'Cedarville Cursive', cursive;
 }
-
+h1:hover {
+    text-shadow: 2px 2px 5px rgb(243, 169, 225);
+}
 h2 {
     text-align: center; 
     margin-top: 80px;
@@ -59,7 +61,11 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
     padding-right: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+.image:hover {
+    box-shadow: 5px 5px rgb(96, 235, 145), 10px 10px rgb(238, 169, 221), 15px 15px rgb(246, 177, 124);
 }
 
   .choices {
