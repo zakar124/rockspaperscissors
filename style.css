@@ -1,118 +1,120 @@
 body {
-    font-family: 'Indie Flower', cursive;
-    font-size: 30px;
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
 }
-
-
 
 h1 {
-    color: rgb(255, 106, 0);
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Cedarville Cursive', cursive;
+  color: rgb(255, 106, 0);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Cedarville Cursive", cursive;
 }
 h1:hover {
-    text-shadow: 2px 2px 5px rgb(243, 169, 225);
+  text-shadow: 2px 2px 5px rgb(243, 169, 225);
 }
 h2 {
-    text-align: center; 
-    margin-top: 80px;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 20px;
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 20px;
 }
 
 .topContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(132, 245, 213); opacity:0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(132, 245, 213);
+  opacity: 0.9;
 }
 
 .button {
-    background-color: #3cffa4; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    font-family: 'Indie Flower', cursive;
-  }
+  background-color: #3cffa4; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+}
 
-  .btn:hover {
-    background-color: rgb(243, 169, 250);
-    border: 5px dotted rgb(62, 228, 219);
-  }
+.btn:hover {
+  background-color: rgb(243, 169, 250);
+  border: 5px dotted rgb(62, 228, 219);
+}
 
 .gameContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
+  text-shadow: 3px 5px 5px rgb(169, 227, 243);
 }
 
 .image {
-    max-width:100%;
-    max-height: 200px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-right: 10px;
-    border-radius: 15px;
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 10px;
+  border-radius: 15px;
 }
 
 .image:hover {
-    box-shadow: 5px 5px rgb(96, 235, 145), 10px 10px rgb(238, 169, 221), 15px 15px rgb(246, 177, 124);
+  box-shadow: 5px 5px rgb(96, 235, 145), 10px 10px rgb(238, 169, 221),
+    15px 15px rgb(246, 177, 124);
 }
 
-  .choices {
-        max-width:auto;
-        max-height: 150px;
-        margin-top: auto;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        padding-right: 10x;
-        border-radius: 55px;
-        border: 5px dotted rgb(62, 228, 219);
-        
+.choices {
+  max-width: auto;
+  max-height: 150px;
+  margin-top: auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-right: 10x;
+  border-radius: 55px;
+  border: 5px dotted rgb(62, 228, 219);
 }
 .choices:hover {
-        border: 12px dotted rgb(62, 228, 219);
-    }
-
-
-.imageBorder {
-    border: 20px solid rgb(48, 228, 213);
+  border: 12px dotted rgb(62, 228, 219);
 }
 
-  
-  
- #playerChoices {
- border: 10px solid rgb(48, 228, 213);
- text-align: center;
- padding: auto;
- }
- 
- .winner {
-    border: 15px solid rgb(48, 228, 108);
-    text-align: center;
-    font-size: 50px;
- }
-  
+.imageBorder {
+  border: 20px solid rgb(48, 228, 213);
+}
 
-  .hidden {
-    display: none;
-  }
+#playerChoices {
+  border: 10px solid rgb(48, 228, 213);
+  text-align: center;
+  padding: auto;
+}
 
- .computerChose, .youChose  {
-     color:rgb(255, 106, 0);
-     font-size: 40px;;
- }
+.winner {
+  border: 15px solid rgb(48, 228, 108);
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 3px 5px 5px rgb(169, 227, 243);
+}
 
- #scores {
-     text-align: center;
-     border: 5px dashed rgb(48, 228, 108);
- }
+.hidden {
+  display: none;
+}
+
+.computerChose,
+.youChose {
+  color: rgb(255, 106, 0);
+  font-size: 40px;
+  text-shadow: 3px 5px 5px rgb(23, 232, 208);
+}
+.computerChose:hover ,
+.youChose:hover {
+    text-shadow: 3px 5px 5px rgb(187, 232, 23);
+    color: rgb(0, 255, 13);
+}
+#scores {
+  text-align: center;
+  border: 5px dashed rgb(189, 248, 209);
+}
