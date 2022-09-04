@@ -66,14 +66,13 @@ choices.forEach((choice) => {
   
   }
     else if ((round.textContent == 5) && (yourScore.textContent > computerScore.textContent)) {
-      winner.textContent =`Final Round: You Win 
-      All!   
-      🎉 🏆 🎉 🏆  🎉 `;
+      winner.textContent =`🎉🏆🎉 Final Round: Winner, Winner, Chicken Dinner!   
+      🎉🏆🐣🎉   `;
       yourScore.textContent = 0;
       computerScore.textContent =0;
 
   } else if ((round.textContent == 5) && (yourScore.textContent == computerScore.textContent)) {
-    winner.textContent =`Final Round: Tied 🙃`;
+    winner.textContent =`Final Round: Tied. Try again 🙃`;
     yourScore.textContent = 0;
     computerScore.textContent =0;
      

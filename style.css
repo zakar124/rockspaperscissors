@@ -103,6 +103,7 @@ h2 {
 
  .computerChose, .youChose  {
      color:rgb(255, 106, 0);
+     font-size: 40px;;
  }
 
  #scores {
