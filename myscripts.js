@@ -9,7 +9,7 @@ let imageBorder = document.querySelector(".imageBorder");
 let winner = document.querySelector(".winner");
 let youChose = document.querySelector(".youChose");
 let computerChose = document.querySelector(".computerChose");
-let round = document.querySelector(".round");
+let round = document.querySelector("#round");
 
 yourScore.textContent = 0;
 computerScore.textContent = 0;
@@ -79,6 +79,8 @@ choices.forEach((choice) => {
   }
   if (round.textContent == 5) {
     round.textContent = 0;
+    let changeBackground = document.getElementById("scores");
+    changeBackground.style.display = "none";
   }
   });
 });

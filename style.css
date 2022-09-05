@@ -11,12 +11,7 @@ h1 {
 }
 h1:hover {
   text-shadow: 2px 2px 5px rgb(243, 169, 225);
-}
-h2 {
-  text-align: center;
-  margin-top: 80px;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 20px;
+
 }
 
 .topContainer {
