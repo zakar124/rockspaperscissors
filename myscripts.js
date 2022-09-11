@@ -19,8 +19,18 @@ let finalWinner = function (message) {
      computerScore.textContent =0;
  }
 
+ let scoresDisappear = function () {
+  let changeBackground = document.getElementById("scores");
+  changeBackground.style.display = "none";
+ }
 
- 
+ // let winnerOfRound = function (message) {
+//   winner.textContent = message ;
+//   youChose.textContent = `${playerInput}`;
+//   computerChose.textContent = `${computerInput}`;
+//  }
+
+
 // choices.classList.add("imageBorder");
 let playerInput = choices.value;
 
@@ -28,11 +38,6 @@ let playerInput = choices.value;
 const computerChoices = ["Rock", "Paper", "Scissors"];
 let computerInput = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-let winnerOfRound = function (message) {
-  winner.textContent = message ;
-  youChose.textContent = `${playerInput}`;
-  computerChose.textContent = `${computerInput}`;
- }
 
 
 choices.forEach((choice) => {
@@ -55,7 +60,6 @@ choices.forEach((choice) => {
   }
 
   
- 
   else if ((playerInput === "Rock" && computerInput === "Scissors") 
   || (playerInput === "Paper" && computerInput === "Rock") 
   || (playerInput === "Scissors" & computerInput == "Paper")) {
@@ -88,14 +92,12 @@ choices.forEach((choice) => {
   }
   if (round.textContent == 5) {
     round.textContent = 0;
-    let changeBackground = document.getElementById("scores");
-    changeBackground.style.display = "none";
+   scoresDisappear();
   }
   });
 });
 document.querySelector('.button').addEventListener('click', function () {
-  let changeBackground = document.getElementById("scores");
-  changeBackground.style.display = "none";
+  scoresDisappear();
   let changeBackground1 = document.getElementById("playerChoices");
   changeBackground1.style.display = "none";
   round.textContent = 0;
