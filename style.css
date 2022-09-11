@@ -11,7 +11,6 @@ h1 {
 }
 h1:hover {
   text-shadow: 2px 2px 5px rgb(243, 169, 225);
-
 }
 
 .topContainer {
@@ -104,10 +103,10 @@ h1:hover {
   font-size: 40px;
   text-shadow: 3px 5px 5px rgb(23, 232, 208);
 }
-.computerChose:hover ,
+.computerChose:hover,
 .youChose:hover {
-    text-shadow: 3px 5px 5px rgb(187, 232, 23);
-    color: rgb(0, 255, 13);
+  text-shadow: 3px 5px 5px rgb(187, 232, 23);
+  color: rgb(0, 255, 13);
 }
 #scores {
   text-align: center;
