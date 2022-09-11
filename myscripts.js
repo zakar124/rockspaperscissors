@@ -86,6 +86,7 @@ choices.forEach((choice) => {
   }
   });
 });
+
 document.querySelector('.button').addEventListener('click', function () {
   scoresDisappear();
   let changeBackground1 = document.getElementById("playerChoices");
