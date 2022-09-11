@@ -1,6 +1,4 @@
 
-
-
 const choices = document.querySelectorAll(".choices");
 
 let yourScore = document.querySelector(".yourScore");
@@ -15,12 +13,26 @@ yourScore.textContent = 0;
 computerScore.textContent = 0;
 round.textContent = 0;
 
+let finalWinner = function (message) {
+  winner.textContent = message;
+     yourScore.textContent = 0;
+     computerScore.textContent =0;
+ }
 
+
+ 
 // choices.classList.add("imageBorder");
 let playerInput = choices.value;
 
+
 const computerChoices = ["Rock", "Paper", "Scissors"];
 let computerInput = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+let winnerOfRound = function (message) {
+  winner.textContent = message ;
+  youChose.textContent = `${playerInput}`;
+  computerChose.textContent = `${computerInput}`;
+ }
 
 
 choices.forEach((choice) => {
@@ -42,6 +54,7 @@ choices.forEach((choice) => {
     
   }
 
+  
  
   else if ((playerInput === "Rock" && computerInput === "Scissors") 
   || (playerInput === "Paper" && computerInput === "Rock") 
@@ -59,22 +72,18 @@ choices.forEach((choice) => {
   }
 
   if ((round.textContent == 5) && (computerScore.textContent > yourScore.textContent)) {
-    winner.textContent = `Final Round: Bully Wins All
-    😩😒`;
-    yourScore.textContent = 0;
-  computerScore.textContent =0;
-  
+    finalWinner(`Final Round: Bully Wins All
+    😩😒`);
+
   }
     else if ((round.textContent == 5) && (yourScore.textContent > computerScore.textContent)) {
-      winner.textContent =`🎉🏆🎉 Final Round: Winner, Winner, Chicken Dinner!   
-      🎉🏆🐣🎉   `;
-      yourScore.textContent = 0;
-      computerScore.textContent =0;
+     finalWinner(`🎉🏆🎉 Final Round: Winner, Winner, Chicken Dinner!   
+     🎉🏆🐣🎉   `);
+     
 
   } else if ((round.textContent == 5) && (yourScore.textContent == computerScore.textContent)) {
-    winner.textContent =`Final Round: Tied. Try again 🙃`;
-    yourScore.textContent = 0;
-    computerScore.textContent =0;
+    finalWinner(`Final Round: Tied. Try again 🙃`);
+
      
   }
   if (round.textContent == 5) {
@@ -96,7 +105,10 @@ document.querySelector('.button').addEventListener('click', function () {
   youChose.textContent = "";
   computerChose.textContent = "";
 
+
   
 });
 
-style.display = 'block';
+// style.display = 'block';
+
+
