@@ -24,8 +24,9 @@ let finalWinner = function (message) {
   changeBackground.style.display = "none";
  }
 
- // let winnerOfRound = function (message) {
-//   winner.textContent = message ;
+//  let winnerOfRound = function (message) {
+//   winner.textContent = message;
+//   let playerInput = choices.value;
 //   youChose.textContent = `${playerInput}`;
 //   computerChose.textContent = `${computerInput}`;
 //  }
@@ -50,11 +51,16 @@ choices.forEach((choice) => {
      let changeBackground1 = document.getElementById("playerChoices");
      changeBackground1.style.display = "block";
 
+  let winnerOfRound = function (message) {
+  winner.textContent = message;
+  youChose.textContent = `${playerInput}`;
+  computerChose.textContent = `${computerInput}`;
+ }
+
+
   if ((playerInput === "Rock" && computerInput === "Paper" ) 
   || (playerInput === "Paper" && computerInput === "Scissors" )) {
-    winner.textContent = `YOU LOSE Round ${round.textContent}`;
-    youChose.textContent = `${playerInput}`;
-    computerChose.textContent = `${computerInput}`;
+    winnerOfRound(`YOU LOSE Round ${round.textContent}`);
     computerScore.textContent++;
     
   }
@@ -63,16 +69,12 @@ choices.forEach((choice) => {
   else if ((playerInput === "Rock" && computerInput === "Scissors") 
   || (playerInput === "Paper" && computerInput === "Rock") 
   || (playerInput === "Scissors" & computerInput == "Paper")) {
-    winner.textContent = `YOU WIN Round ${round.textContent}`;
-    youChose.textContent = `${playerInput}`;
-    computerChose.textContent = `${computerInput}`;
+    winnerOfRound (`YOU WIN Round ${round.textContent}`);
     yourScore.textContent++;
   }
 
   else if (playerInput === computerInput) {
-    winner.textContent = `TIED for Round ${round.textContent}`;
-    youChose.textContent = `${playerInput}`;
-    computerChose.textContent = `${computerInput}`;;
+    winnerOfRound (`TIED for Round ${round.textContent}`);
   }
 
   if ((round.textContent == 5) && (computerScore.textContent > yourScore.textContent)) {
