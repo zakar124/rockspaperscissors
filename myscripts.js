@@ -1,7 +1,6 @@
 "use strict";
 
 const choices = document.querySelectorAll(".choices");
-
 let yourScore = document.querySelector(".yourScore");
 let computerScore = document.querySelector(".computerScore");
 let imageBorder = document.querySelector(".imageBorder");
@@ -92,6 +91,7 @@ choices.forEach((choice) => {
 
 document.querySelector(".button").addEventListener("click", function () {
   scoresDisappear();
+  round.textContent = 0;
   let changeBackground1 = document.getElementById("playerChoices");
   changeBackground1.style.display = "none";
 });
