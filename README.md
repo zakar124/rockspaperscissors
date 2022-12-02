@@ -1,1 +1,2 @@
 # rockspaperscissors
+I loved this project! Although it's simple JS, it took me some time to clean up my code, and make it more digestible. I especially enjoyed the CSS aspect and figuring out my aesthetic.
